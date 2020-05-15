@@ -1,0 +1,696 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Assignment 3 - RNG and Data Presentation
+\end_layout
+
+\begin_layout Section
+Distribution Information
+\end_layout
+
+\begin_layout Subsection
+Logarithmic Distribution
+\end_layout
+
+\begin_layout Standard
+The formula for Probability Mass Function of a distributed random variable
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{f(k)=\frac{-1}{\ln(1-p)}(\frac{p^{k}}{k})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ and where 
+\begin_inset Formula $0<p<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NOTE: PDF in Logarithmic is known as PMF (Probability Mass Function).
+\end_layout
+
+\begin_layout Standard
+The cumulative distribution function for the logarithmic distribution is
+ cumulative sum of PMF:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align block
+\begin_inset Formula 
+\[
+\mathbf{F(k)=\sum_{k=1}^{\inf}f(x)=\frac{-1}{\ln(1-p)}(\frac{p^{k}}{k})}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+and where 
+\begin_inset Formula $0<p<1$
+\end_inset
+
+ .
+\begin_inset Newline newline
+\end_inset
+
+The inverse distribution function for the logarithmic distribution is:
+\begin_inset Formula 
+\[
+\mathbf{F^{-1}\left(k\right)=\exp^{p}}
+\]
+
+\end_inset
+
+where p is cumulative distribution function.
+\end_layout
+
+\begin_layout Standard
+where p is cumulative distribution function.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "LOG:CDF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "LOG:CDF"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Asgn-3 Images/LOG-CDF.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout LyX-Code
+\align left
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+shows Cumulative Distribution Function for Random number sequence used for
+ Logarithmic distribution.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LOG:HIST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Asgn-3 Images/LOG_HIST.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LOG:HIST"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+shows Histogram for generated Random Number Sequence used for Logarithmic
+ distribution.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LOG:BOX"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LOG:BOX"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Asgn-3 Images/LOG_BOX.png
+	lyxscale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+shows BoxPlot for generated Random Number Sequence used for Logarithmic
+ distribution.
+\end_layout
+
+\begin_layout Subsection
+Kumaraswamy Distribution
+\end_layout
+
+\begin_layout Standard
+The formula for CDF i.e cumulative distribution function for Kumaraswamy
+ distribution is:
+\begin_inset Formula 
+\[
+\mathbf{F\left(x;a,b\right)=1-\left(1-x^{a}\right)^{b}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where x is a uniform random number, while a and b are real numbers.
+\end_layout
+
+\begin_layout Standard
+The inverse cumulative distribution function for the kumaraswamy distribution
+ is:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\mathbf{F^{-1}\left(x\right)=\left(1-\left(1-P\right)^{\frac{1}{b}}\right)^{\frac{1}{a}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where P is probability value which is obtained from CDF.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:KUM:CDF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:KUM:CDF"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Asgn-3 Images/KUM_CDF.png
+	lyxscale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+shows Cumulative Distribution Function for Random number sequence used for
+ Kumaraswamy distribution.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:KUM:HIST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:KUM:HIST"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Asgn-3 Images/KUM_HIST.png
+	lyxscale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+shows Histogram for generated Random Number Sequence used for Kumaraswamy
+ distribution.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:KUM:BOX"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:KUM:BOX"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Asgn-3 Images/KUM_BOX.png
+	lyxscale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+shows BoxPlot for generated Random Number Sequence used for Kumaraswamy
+ distribution.
+\end_layout
+
+\begin_layout Section
+User Guide
+\end_layout
+
+\begin_layout Section*
+Setting up Python
+\end_layout
+
+\begin_layout Enumerate
+Use this link 
+\begin_inset CommandInset href
+LatexCommand href
+name "this link"
+target "https://www.python.org/downloads/"
+literal "true"
+
+\end_inset
+
+ and download Python based on your system's configuration.
+\end_layout
+
+\begin_layout Enumerate
+Install the downloaded file.
+\end_layout
+
+\begin_layout Enumerate
+Once Python is installed verify by 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Opening Command Line(cmd)/Terminal from your respective Operating System.
+\end_layout
+
+\begin_layout Enumerate
+Type 'python --version'.
+\end_layout
+
+\begin_layout Enumerate
+'Python 2.7.16' is displayed which indicates that Python is successfully installed.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Additional Libraries
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+NumPy
+\series default
+: a library extending support for large, multi-dimensional arrays and matrices
+ and contains a large collection of high-level mathematical functions to
+ operate on these arrays
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Matplotlib
+\series default
+ : a plotting library for the Python programming language and its numerical
+ mathematics extension NumPy.
+ 
+\end_layout
+
+\begin_layout Itemize
+Install matplotlib pip package.
+\begin_inset Newline newline
+\end_inset
+
+
+\color brown
+$ pip install matplotlib
+\end_layout
+
+\begin_layout Itemize
+Install numpy pip package
+\begin_inset Newline newline
+\end_inset
+
+
+\color brown
+$ pip install numpy
+\end_layout
+
+\begin_layout Section*
+Run the python program
+\end_layout
+
+\begin_layout Enumerate
+Save the random number generator program written in python with an extention
+ 
+\begin_inset Quotes eld
+\end_inset
+
+prgRng.py
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Enter the command 
+\begin_inset Quotes eld
+\end_inset
+
+python prgRng.py
+\begin_inset Quotes erd
+\end_inset
+
+ and run the program in CMD/Terminal .
+\end_layout
+
+\begin_layout Section*
+Instructions:
+\end_layout
+
+\begin_layout Standard
+Once the code is compiled and run successfully provide the necessary user
+ inputs:
+\end_layout
+
+\begin_layout Enumerate
+Enter the value of seed: 10
+\end_layout
+
+\begin_layout Enumerate
+Enter the value of size: 100
+\end_layout
+
+\begin_layout Enumerate
+Select an option to proceed : 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Logarithmic Distribution : 
+\end_layout
+
+\begin_layout Itemize
+Enter the value of parameter: 0.66
+\end_layout
+
+\begin_layout Itemize
+Plottings of CDF , Histogram and BoxPlot for Logarithmic Distribution will
+ be plotted based on the given inputs.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Kumaraswamy Distribution
+\end_layout
+
+\begin_layout Itemize
+Enter the value of alpha: 2
+\end_layout
+
+\begin_layout Itemize
+Enter the value of beta: 5
+\end_layout
+
+\begin_layout Itemize
+Plottings of CDF , Histogram and BoxPlot for Kumaraswamy Distribution will
+ be plotted based on the given inputs.
+\end_layout
+
+\begin_layout Standard
+Exit
+\end_layout
+
+\begin_layout Itemize
+exit from the program
+\end_layout
+
+\end_body
+\end_document
